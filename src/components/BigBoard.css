@@ -148,7 +148,7 @@ html, body {
 
   .title {
     font-size: 1.8rem;
-    margin-left: 0; /* reset logo nudge */
+    margin-left: 0;
   }
 
   .mavs-logo {
@@ -169,16 +169,18 @@ html, body {
   }
 
   .player-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ centers the .player-card */
     padding: 1rem;
     gap: 1rem;
-    flex-direction: column;
-    align-items: center;
   }
 
   .player-card {
     width: 90%;
     max-width: 360px;
     padding: 1rem;
+    margin: 0 auto; /* Just in case */
   }
 
   .player-info h2 {
@@ -190,5 +192,3 @@ html, body {
     font-size: 0.95rem;
   }
 }
-
-  
