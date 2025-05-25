@@ -359,7 +359,7 @@ body {
 
   .stats-table th:nth-child(1),
   .stats-table td:nth-child(1) {
-    max-width: 100px; /* Date — give it room for MM/DD/YYYY */
+    max-width: 100px; 
   }
 
   .stats-table th:nth-child(2),
