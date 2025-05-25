@@ -358,10 +358,14 @@ body {
   }  
 
   .stats-table th:nth-child(1),
-  .stats-table td:nth-child(1) { max-width: 60px; }
+  .stats-table td:nth-child(1) {
+    max-width: 80px; /* Date — give it room for MM/DD/YYYY */
+  }
 
   .stats-table th:nth-child(2),
-  .stats-table td:nth-child(2) { max-width: 75px; }
+  .stats-table td:nth-child(2) {
+    max-width: 90px; /* Opponent — short team names need space */
+  }
 
   .stats-table th:nth-child(3),
   .stats-table td:nth-child(3) { max-width: 45px; }
