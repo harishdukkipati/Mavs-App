@@ -25,7 +25,14 @@ export default function processPlayerRankings(bio, scoutRankings) {
 
     const sortedPlayersWithRank = Object.values(playerData) 
         .filter(i => i.avgScore != null)
-        .sort((a, b) => a.avgScore - b.avgScore)
+        .sort((a, b) => {
+            if (a.avgScore != b.avgScore) { 
+                return a.avgScore - b.avgScore;
+            }
+            const aStd = stdDev(Object.values(a.scoutRanks).filter(r => r != null));
+            const bStd = stdDev(Object.values(b.scoutRanks).filter(r => r != null));
+            return aStd - bStd
+        })
         .map((player, index) => ({
             ...player,
             rank: index + 1,
@@ -51,5 +58,15 @@ export default function processPlayerRankings(bio, scoutRankings) {
 
     return finalPlayers;
     
+}
+
+function stdDev(arr) {
+    if (!arr.length) return 0;
+  
+    const mean = arr.reduce((sum, val) => sum + val, 0) / arr.length;
+    const variance = arr.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / arr.length;
+  
+    return Math.sqrt(variance);
+  
 }
 

@@ -65,19 +65,33 @@ function ScoutingReports() {
             variant="outlined"
             fullWidth
             InputProps={{ style: { backgroundColor: 'white' } }}
-            style={{ marginBottom: '1rem' }}
+            InputLabelProps={{
+            shrink: false, // prevent floating
+            style: {
+            opacity: newScoutName ? 0 : 1, // hide if filled
+          }
+          }}
+          style={{ marginBottom: '1rem' }}
           />
+
           <TextField
-            label="Report"
-            value={newReportText}
-            onChange={(e) => setNewReportText(e.target.value)}
-            variant="outlined"
-            multiline
-            rows={4}
-            fullWidth
-            InputProps={{ style: { backgroundColor: 'white' } }}
-            style={{ marginBottom: '1rem' }}
-          />
+          label="Report"
+          value={newReportText}
+          onChange={(e) => setNewReportText(e.target.value)}
+          variant="outlined"
+          multiline
+          rows={4}
+          fullWidth
+          InputProps={{ style: { backgroundColor: 'white' } }}
+          InputLabelProps={{
+          shrink: false,
+          style: {
+            opacity: newReportText ? 0 : 1,
+          }
+          }}
+  style={{ marginBottom: '1rem' }}
+/>
+
           <Button
             variant="contained"
             fullWidth

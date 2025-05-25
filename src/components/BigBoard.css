@@ -1,54 +1,133 @@
+/* Global styles */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  .draft-hub-container {
-    padding: 2rem;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .player-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .player-card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 250px;
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .player-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .player-photo {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .player-info h2 {
-    margin: 0.5rem 0 0.25rem 0;
-  }
-  
-  .player-info p {
-    margin: 0.25rem 0;
-    color: #666;
-    font-size: 0.95rem;
-  }
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #f2f2f2;
+}
+
+/* Main container */
+.draft-hub-container {
+  padding-top: 10px; /* leave space for fixed header */
+}
+
+/* Header styling */
+.hub-header {
+  width: 100vw; /* full viewport width to avoid layout shifting */
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 1rem 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.hub-header-inner {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* ensures consistent centering */
+}
+
+.hub-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mavs-logo {
+  height: 64px;
+  margin-right: 1rem;   /* reduce gap to title */
+  margin-left: 0.75rem; /* nudge logo right */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e2e8f0;
+  margin: 0;
+  margin-left: -2.25rem; 
+}
+
+/* Filters */
+.filters-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search-input,
+.team-filter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* Player list */
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Player cards */
+.player-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  color: #f2f2f2;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.player-info h2 {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.player-info p {
+  margin: 0.25rem 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.highlight-up {
+  color: green;
+}
+
+.highlight-down {
+  color: red;
+}
+
   

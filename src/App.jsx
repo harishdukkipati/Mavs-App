@@ -6,6 +6,7 @@ function App() {
   return (
     <>
         <Routes>
+          <Route path="/" element={<BigBoard />} /> 
           <Route path="/BigBoard" element={<BigBoard />} />
           <Route path="/player/:playerId" element={<PlayerProfile />} />
         </Routes>
