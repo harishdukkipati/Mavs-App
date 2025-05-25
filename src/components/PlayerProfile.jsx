@@ -41,7 +41,6 @@ function PlayerProfile() {
       <div className="tab-content">
         {activeTab === 'stats' && <PlayerStatistics />}
         {activeTab === 'reports' && <ScoutingReports />}
-        {/* Nothing rendered if activeTab is null */}
       </div>
     </div>
   );
