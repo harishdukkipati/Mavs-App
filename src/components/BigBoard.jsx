@@ -27,7 +27,7 @@ function BigBoard() {
 
   return (
     <div className='draft-hub-container'>
-      <header className="hub-header">
+    <header className="hub-header">
   <div className="hub-header-inner">
     <div className="hub-header-top">
       <img src={MavsLogo} alt="Mavs Logo" className="mavs-logo" />

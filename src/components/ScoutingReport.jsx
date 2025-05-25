@@ -66,9 +66,9 @@ function ScoutingReports() {
             fullWidth
             InputProps={{ style: { backgroundColor: 'white' } }}
             InputLabelProps={{
-            shrink: false, // prevent floating
+            shrink: false, 
             style: {
-            opacity: newScoutName ? 0 : 1, // hide if filled
+            opacity: newScoutName ? 0 : 1, 
           }
           }}
           style={{ marginBottom: '1rem' }}

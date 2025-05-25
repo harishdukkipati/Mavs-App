@@ -146,7 +146,8 @@ html, body {
 
   .mavs-logo {
     height: 50px;
-    margin: 0;
+    display: block;       
+    margin: 0 auto;       
   }
 
   .filters {
