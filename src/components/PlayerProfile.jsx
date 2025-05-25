@@ -11,7 +11,6 @@ import ScoutingReport  from './PlayerMeasurments';
 import BigBoard from './BigBoard';
 
 function PlayerProfile() {
-  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(null); 
 
   return (
@@ -31,7 +30,6 @@ function PlayerProfile() {
           variant={activeTab === 'reports' ? 'contained' : 'outlined'}
           color="warning"
           onClick={() => setActiveTab('reports')}
-          sx={{ ml: 2 }}
         >
           Scouting Reports
         </Button>
@@ -39,7 +37,9 @@ function PlayerProfile() {
 
       {/* Tab content */}
       <div className="tab-content">
-        {activeTab === 'stats' && <PlayerStatistics />}
+      <div className="table-scroll-wrapper">
+          <PlayerStatistics />
+      </div>
         {activeTab === 'reports' && <ScoutingReports />}
       </div>
     </div>
