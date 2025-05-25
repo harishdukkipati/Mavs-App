@@ -359,12 +359,12 @@ body {
 
   .stats-table th:nth-child(1),
   .stats-table td:nth-child(1) {
-    max-width: 100px; 
+    max-width: 120px; 
   }
 
   .stats-table th:nth-child(2),
   .stats-table td:nth-child(2) {
-    max-width: 110px; /* Opponent — short team names need space */
+    max-width: 130px; /* Opponent — short team names need space */
   }
 
   .stats-table th:nth-child(3),
