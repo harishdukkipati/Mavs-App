@@ -368,10 +368,10 @@ body {
   }
 
   .stats-table th:nth-child(3),
-  .stats-table td:nth-child(3) { max-width: 45px; }
+  .stats-table td:nth-child(3) { max-width: 90px; }
 
   .stats-table th:nth-child(4),
-  .stats-table td:nth-child(4) { max-width: 45px; }
+  .stats-table td:nth-child(4) { max-width: 90px; }
 
   .stats-table th:nth-child(5),
   .stats-table td:nth-child(5) { max-width: 45px; }
