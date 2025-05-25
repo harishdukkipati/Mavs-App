@@ -268,95 +268,51 @@ body {
 
 @media (max-width: 768px) {
   .profile-page {
-    width: 100%;
+    width: 100vw; /* Ensures it's within viewport width */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
     padding: 10px;
-  }
-
-  .profile-header-banner {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .player-banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .banner-image {
-    width: 180px;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .banner-info {
-    align-items: center;
-  }
-
-  .player-name {
-    font-size: 1.8rem;
-    text-align: center;
+    box-sizing: border-box;
   }
 
   .measurements-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keep it horizontal but constrained */
     gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .measurements-grid > div {
+    word-wrap: break-word;
+    min-width: 0; /* Ensures child doesn't expand grid */
+  }
+
+  .banner-image {
+    max-width: 100%; /* Prevents overflowing */
+    height: auto;
   }
 
   .tab-buttons {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
 
   .tab-buttons button {
     width: 90%;
+    max-width: 400px;
   }
 
   .form-wrapper {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .stats-table thead,
-  .stats-table td,
-  .stats-table th {
-    font-size: 0.85rem;
-    padding: 8px;
-  }
-
-  .season-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    font-size: 0.9rem;
-  }
-
-  .player-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .player-card {
-    width: 90%;
-    max-width: 360px;
-    padding: 1rem;
-  }
-
-  .title {
-    font-size: 2rem;
-    padding-left: 20px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .mavs-logo {
-    height: 60px;
-    margin-right: 0;
+  .tab-content {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
