@@ -342,7 +342,7 @@ body {
 
   /* 👇 Add responsive table behavior */
   .stats-table {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
@@ -351,10 +351,11 @@ body {
   .stats-table th,
   .stats-table td {
     padding: 2px 4px;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    white-space: nowrap;           /* ✅ Don't wrap text */
+    overflow: hidden;              /* ✅ Hide spillover */
+    text-overflow: clip;           /* ✅ Don’t show ... */
     text-align: center;
-  }
+  }  
 
   .stats-table th:nth-child(1),
   .stats-table td:nth-child(1) { max-width: 60px; }
