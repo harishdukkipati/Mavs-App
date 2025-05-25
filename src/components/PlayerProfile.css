@@ -268,15 +268,45 @@ body {
 
 @media (max-width: 768px) {
   .profile-page {
-    width: 100vw; /* Ensures it's within viewport width */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100vw;
+    overflow-x: hidden;
     padding: 10px;
     box-sizing: border-box;
   }
 
+  .profile-header-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .player-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .banner-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .banner-image {
+    width: 160px;
+    max-width: 90%;
+    height: auto;
+  }
+
   .measurements-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Keep it horizontal but constrained */
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     width: 100%;
     max-width: 100%;
@@ -285,12 +315,7 @@ body {
 
   .measurements-grid > div {
     word-wrap: break-word;
-    min-width: 0; /* Ensures child doesn't expand grid */
-  }
-
-  .banner-image {
-    max-width: 100%; /* Prevents overflowing */
-    height: auto;
+    min-width: 0;
   }
 
   .tab-buttons {
@@ -315,7 +340,6 @@ body {
     box-sizing: border-box;
   }
 }
-
   
   
   
