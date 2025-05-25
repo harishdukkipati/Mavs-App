@@ -261,18 +261,6 @@ body {
 } 
 
 @media (max-width: 768px) {
-  .add-report-button-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 10px 0 10px;
-  }
-  
-  .add-report-button {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-  
   .profile-page {
     width: 100vw;
     overflow-x: hidden;
