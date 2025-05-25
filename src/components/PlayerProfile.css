@@ -262,8 +262,8 @@ body {
 
 @media (max-width: 768px) {
   .add-report-button-wrapper {
-    margin-top: 25px;    
-    margin-left: 15px;    
+    margin-top: 50px;   
+    margin-left: 20px;    
     display: flex;
     justify-content: flex-start; 
     width: 100%;
