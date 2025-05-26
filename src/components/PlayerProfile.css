@@ -256,9 +256,10 @@ body {
   background-color: #111;
   color: #f2f2f2;
   min-height: 100vh;
-  width: 195vh;
+  width: 100vw;
   padding: 20px;
-} 
+  box-sizing: border-box;
+}
 
 @media (max-width: 768px) {
   .profile-page {
