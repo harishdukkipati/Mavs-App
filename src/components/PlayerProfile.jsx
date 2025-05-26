@@ -1,14 +1,9 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import data from '../data/intern_project_data.json';
-import processPlayerMeasurements from '../utils/processPlayerMeasurments';
+import { useState } from 'react';
+import ScoutingReport from './PlayerMeasurments';
 import PlayerStatistics from './PlayerStatistics';
 import ScoutingReports from './ScoutingReport'; 
 import { Button } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import './PlayerProfile.css';
-import ScoutingReport  from './PlayerMeasurments';
-import BigBoard from './BigBoard';
 
 function PlayerProfile() {
   const [activeTab, setActiveTab] = useState(null); 
@@ -35,11 +30,9 @@ function PlayerProfile() {
         </Button>
       </div>
 
-      {/* Tab content */}
+      {/* Tab content (render only when tab is selected) */}
       <div className="tab-content">
-      <div className="table-scroll-wrapper">
-          <PlayerStatistics />
-      </div>
+        {activeTab === 'stats' && <PlayerStatistics />}
         {activeTab === 'reports' && <ScoutingReports />}
       </div>
     </div>
@@ -47,4 +40,3 @@ function PlayerProfile() {
 }
 
 export default PlayerProfile;
-
