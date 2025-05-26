@@ -1,3 +1,13 @@
 ##Mavs App
 
-I built a scouts website for the NBA draft. On the home page we get routed to the Big Board where we have a list of all prospects ranked. Within each prospect's player card we include every scout's rank and bold a rank if it is higher than the projected ranking. This allows us to see wether or not a scout is higher on a prospect than others. We can then click on each player's card that navigates us to the player profile page. The player profile page includes a card with the player's photo and combine measurments. In addition we have the player's stats and scouting report down below which you can alternate between. Within the player's stats we have the game logs of all the recent games and then you can alternate to the season logs which include each season's averages. For the scouting report section we include pre-existing scouting reports from scouts and you are also able to add your own scouting report by filling scouting report through a form. 
+I built a scouting platform for the NBA Draft designed to help teams evaluate prospects more effectively. The homepage features a Big Board that ranks all draft-eligible players. Each player card displays the rankings submitted by various scouts, and the UI highlights insights at a glance — a scout's rank appears green if they’re higher on a player than the consensus, and red if they’re lower.
+
+The Big Board also includes a search bar to quickly find specific prospects and a team filter to narrow players by school. Clicking a player card navigates to their individual profile page, which features their photo and complete combine measurements.
+
+Below the player card, users can toggle between two key sections:
+
+- Player Stats: View detailed game logs or switch to season averages.
+
+- Scouting Reports: Read existing reports from scouts or submit a new one via a built-in form.
+
+This application gives scouts and front office staff a streamlined, data-driven interface to analyze player performance, spot outlier evaluations, and document observations all in one place.
